@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.trade.mapper.OrderMapper">
+  <select id="countSnapshotItems" resultType="int">
+    select count(*)
+    from order_item_snapshot
+    where order_id = #{orderId}
+  </select>
+</mapper>

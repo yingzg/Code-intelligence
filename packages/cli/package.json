@@ -1,0 +1,24 @@
+{
+  "name": "@code-intelligence/cli",
+  "version": "0.1.0",
+  "type": "module",
+  "bin": {
+    "code-intel": "dist/index.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -b tsconfig.json"
+  },
+  "dependencies": {
+    "@code-intelligence/core": "workspace:*",
+    "commander": "^12.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  }
+}

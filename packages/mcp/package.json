@@ -1,0 +1,25 @@
+{
+  "name": "@code-intelligence/mcp",
+  "version": "0.1.0",
+  "type": "module",
+  "bin": {
+    "code-intelligence-mcp": "dist/server.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/server.d.ts",
+      "default": "./dist/server.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -b tsconfig.json"
+  },
+  "dependencies": {
+    "@code-intelligence/core": "workspace:*",
+    "@modelcontextprotocol/server": "^2.0.0",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  }
+}
