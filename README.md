@@ -7,7 +7,7 @@ Code Intelligence 是一个本地 Java 代码检索与代码理解底座，用�
 ```bash
 bun install
 npm run build
-node packages/cli/dist/index.js register trade-service /mnt/g/workSpace/trade-service
+node packages/cli/dist/index.js register trade-service /path/to/trade-service
 node packages/cli/dist/index.js index trade-service --with-gitnexus
 node packages/cli/dist/index.js search trade-service --type route --query "/api/trade/order/detail" --json
 ```
@@ -26,7 +26,7 @@ node packages/cli/dist/index.js index trade-service
 
 ```bash
 node packages/cli/dist/index.js where
-node packages/cli/dist/index.js register trade-service /mnt/g/workSpace/trade-service --stack java-spring-mybatis
+node packages/cli/dist/index.js register trade-service /path/to/trade-service --stack java-spring-mybatis
 node packages/cli/dist/index.js index trade-service
 node packages/cli/dist/index.js search trade-service --type error --query "ORDER_STATUS_INVALID" --json
 ```
